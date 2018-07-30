@@ -13,12 +13,18 @@ public class WatterBottleTest {
 
  @Test
     public void initialVolume(){
-     assertEquals(100, waterBottle.volume());
+     assertEquals(100, waterBottle.volume() );
  }
 
  @Test
-    public void canDrink(){
+    public void drinkTest(){
      waterBottle.drink();
-     assertEquals(90, waterBottle.volume());
+     assertEquals(90, waterBottle.volume() );
+ }
+
+ @Test
+    public void emptyTest(){
+     waterBottle.emptyBottle();
+     assertEquals(0, waterBottle.volume() );
  }
 }
