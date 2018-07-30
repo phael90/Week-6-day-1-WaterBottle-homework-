@@ -16,6 +16,10 @@ public class WaterBottle {
     public int emptyBottle(){
         return this.volume = this.volume - this.volume;
     }
+
+    public int fullBottle(){
+        return this.volume = 100;
+    }
 }
 
 
